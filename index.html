@@ -17,7 +17,19 @@ var followCursor = (function() {
   s.width=35;
   s.src ='magic.gif';
   
-  var s2 = s3 = s
+  var s2 = document.createElement('img');
+  s2.style.position = 'absolute';
+  s2.style.margin = '0';
+  s2.width=35;
+  s2.src ='magic.gif';
+  
+  var s3 = document.createElement('img');
+ 
+  s3.style.position = 'absolute';
+  s3.style.margin = '0';
+  s3.width=35;
+  s3.src ='magic.gif';
+  
   return {
     init: function() {
       document.body.appendChild(s);
