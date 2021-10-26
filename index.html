@@ -14,7 +14,7 @@ var followCursor = (function() {
   var s = document.createElement('img');
   s.style.position = 'absolute';
   s.style.margin = '0';
-  s.width=30;
+  s.width=35;
   s.src ='magic.gif';
 
   return {
@@ -24,8 +24,8 @@ var followCursor = (function() {
 
     run: function(e) {
       var e = e || window.event;
-      s.style.left = (e.clientX - 5) + 'px';
-      s.style.top = (e.clientY - 5) + 'px';
+      s.style.left = (e.clientX - 10) + 'px';
+      s.style.top = (e.clientY - 10) + 'px';
       getMouseCoords(e);
     }
   };
