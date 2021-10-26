@@ -16,7 +16,8 @@ var followCursor = (function() {
   s.style.margin = '0';
   s.width=35;
   s.src ='magic.gif';
-
+  
+  var s2 = s3 = s
   return {
     init: function() {
       document.body.appendChild(s);
@@ -26,6 +27,11 @@ var followCursor = (function() {
       var e = e || window.event;
       s.style.left = (e.clientX - 10) + 'px';
       s.style.top = (e.clientY - 10) + 'px';
+      s2.style.left = (e.clientX - 20) + 'px';
+      s2.style.top = (e.clientY - 20) + 'px';
+      s3.style.left = (e.clientX - 30) + 'px';
+      s3.style.top = (e.clientY - 30) + 'px';
+      
       getMouseCoords(e);
     }
   };
